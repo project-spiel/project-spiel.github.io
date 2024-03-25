@@ -1,0 +1,78 @@
+@use "sass:map";
+
+@use "pico" with (
+  $theme-color: "sand",
+  $enable-semantic-container: true,
+  $enable-classes: false,
+  $breakpoints:   (
+    xl: null,
+    xxl: null
+  )
+);
+
+@use "themes/default/theme-colors";
+@import "colors";
+
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --pico-background-color:  #{mix($sand-900, $sand-850)}; // theme-colors.get("text-selection-color", "dark");
+    --pico-card-background-color: #{$sand-800};
+    --pico-code-background-color: #{$sand-850};
+    --pico-code-color: #{$sand-400};
+  }
+}
+
+/* fsdasdasd */
+
+
+.brand {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+footer {
+  font-size: 85%;
+}
+
+.home {
+  main > section {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+  }
+  
+  h1:before {
+    content: "";
+    display: block;
+    background-image: url("/assets/images/spiel-logo.svg");
+    width: 4.5em;
+    background-size: contain;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  h1 > span {
+    width: 10em;
+    line-height: 1.4em;
+  }
+  
+  .logo {
+    justify-self: end;
+    max-height: 5em;
+    text-align: right;
+  }
+  
+  article > h2 {
+    font-size: 1.25rem;
+  }
+  
+  article > h3 {
+    font-size: 1rem;
+  }
+  
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  {% include head.liquid %}
+<body class="home">
+  {% include header.liquid %}
+  <main>
+    <h1><span>{{ page.title }}</span></h1>
+    <section>
+      {{ content }}
+    </section>
+  </main>
+  {% include footer.liquid %}
+</body>
+
+</html>

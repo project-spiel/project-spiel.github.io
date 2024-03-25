@@ -1,0 +1,7 @@
+url: "https://spiel-project.org"
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Spiel"
+
+sass:
+  load_paths:
+    - node_modules/@picocss/pico/scss
