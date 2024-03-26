@@ -3,7 +3,6 @@
 @use "pico" with (
   $theme-color: "sand",
   $enable-semantic-container: true,
-  $enable-classes: false,
   $breakpoints:   (
     xl: null,
     xxl: null
@@ -75,4 +74,14 @@ footer {
     font-size: 1rem;
   }
   
+}
+
+nav details.dropdown {
+  summary::after {
+    height: 1.2rem;
+  }
+
+  summary + ul {
+    margin-top: calc(var(--pico-nav-link-spacing-vertical) * -1);
+  }
 }
