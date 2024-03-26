@@ -2,4 +2,4 @@ _site
 node_modules
 .sass-cache
 package-lock.json
-
+Gemfile.lock

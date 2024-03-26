@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
-  {% include "head.liquid" %}
+  {% include head.liquid %}
 <body>
-  {% include "header.liquid" %}
+  {% include header.liquid %}
   <main>
     <h1>{{ page.title }}</h1>
-
-    {{ page.content }}
+    {% comment %} {{ page | debug }} {% endcomment %}
+    {% if page.remote_resource %}
+      {% remote_markdown page.remote_resource %}
+    {% else %}
+      {{ page.content }}
+    {% endif %}
   </main>
+  {% include footer.liquid %}
 </body>
 
 </html>

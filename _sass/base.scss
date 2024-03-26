@@ -3,7 +3,6 @@
 @use "pico" with (
   $theme-color: "sand",
   $enable-semantic-container: true,
-  $enable-classes: false,
   $breakpoints:   (
     xl: null,
     xxl: null
@@ -11,6 +10,8 @@
 );
 
 @use "themes/default/theme-colors";
+@use "helpers/functions";
+
 @import "colors";
 
 
@@ -20,6 +21,11 @@
     --pico-card-background-color: #{$sand-800};
     --pico-code-background-color: #{$sand-850};
     --pico-code-color: #{$sand-400};
+    --pico-dropdown-background-color: #{$sand-800};
+    --pico-dropdown-hover-background-color: #{$sand-900};
+    --pico-dropdown-border-color: #{$sand-400};
+    --pico-dropdown-color: var(--pico-contrast);
+    --pico-icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{functions.display-rgb($sand-400)}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
   }
 }
 
@@ -75,4 +81,14 @@ footer {
     font-size: 1rem;
   }
   
+}
+
+nav details.dropdown {
+  summary::after {
+    height: 1.2rem;
+  }
+
+  summary + ul {
+    margin-top: calc(var(--pico-nav-link-spacing-vertical) * -1);
+  }
 }
