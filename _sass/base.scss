@@ -4,6 +4,32 @@
   $theme-color: "sand",
   $enable-semantic-container: true,
   $breakpoints:   (
+    // Small (landscape phones)
+    // Font size: 17px
+    sm:
+      (
+        breakpoint: 576px,
+        viewport: 510px,
+        root-font-size: 100%,
+      ),
+
+    // Medium (tablets)
+    // Font size: 18px
+    md:
+      (
+        breakpoint: 768px,
+        viewport: 700px,
+        root-font-size: 106.25%,
+      ),
+
+    // Large
+    // Font size: 19px
+    lg:
+      (
+        breakpoint: 1024px,
+        viewport: 950px,
+        root-font-size: 112.5%,
+      ),
     xl: null,
     xxl: null
   )
@@ -14,6 +40,9 @@
 
 @import "colors";
 
+.highlighter-rouge {
+  @import "stata-light";
+}
 
 @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
@@ -27,6 +56,10 @@
     --pico-dropdown-color: var(--pico-contrast);
     --pico-icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{functions.display-rgb($sand-400)}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
   }
+
+  .highlighter-rouge {
+    @import "zenburn";
+  }
 }
 
 /* fsdasdasd */
@@ -39,6 +72,10 @@
 
 footer {
   font-size: 85%;
+}
+
+dt {
+  font-weight: bolder;
 }
 
 .home {

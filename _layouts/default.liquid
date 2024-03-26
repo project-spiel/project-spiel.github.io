@@ -9,7 +9,7 @@
     {% if page.remote_resource %}
       {% remote_markdown page.remote_resource %}
     {% else %}
-      {{ page.content }}
+      {{ content }}
     {% endif %}
   </main>
   {% include footer.liquid %}
