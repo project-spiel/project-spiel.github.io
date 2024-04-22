@@ -31,7 +31,7 @@ flatpak install ai.piper.Speech.Provider.Voice.en_US-amy-medium
 
 ## Installing a Talking Application
 
-Now that you went through the effort of installing a Spiel voice, you need something to speak with it. Orca has [experimental Spiel support](https://www.freelists.org/post/orca/Orca-now-has-Spiel-support). You can also try a small demo app called Spiel It:
+Now that you went through the effort of installing a Spiel voice, you need something to speak with it. Orca has [experimental Spiel support](https://gitlab.gnome.org/GNOME/orca/#experimental-features). You can also try a small demo app called Spiel It:
 
 ```sh
 flatpak install org.project_spiel.SpielIt
