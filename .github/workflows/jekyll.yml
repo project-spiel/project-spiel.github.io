@@ -58,3 +58,4 @@ jobs:
           folder: ./_site
           target-folder: /
           single-commit: true
+          clean: false
