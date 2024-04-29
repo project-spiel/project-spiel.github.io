@@ -10,7 +10,7 @@ We conviniently have all that set up as Flatpaks. Hopefully there will be a more
 To begin you will need to add the Spiel flatpak repository to your system:
 
 ```sh
-flatpak remote-add --user spiel https://project-spiel.org/spiel-repo.flatpakrepo
+flatpak remote-add --user spiel https://project-spiel.org/flatpaks/spiel-repo.flatpakrepo
 ```
 
 ## Installing a Speech Provider
