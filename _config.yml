@@ -5,3 +5,6 @@ title: "Spiel"
 sass:
   load_paths:
     - node_modules/@picocss/pico/scss
+
+plugins:
+  - jekyll-redirect-from
