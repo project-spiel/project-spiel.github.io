@@ -1,5 +1,5 @@
 ---
-permalink: /repo
+permalink: /repo/summary
 redirect_to:
-  - https://project-spiel.org/flatpaks/repo
+  - https://project-spiel.org/flatpaks/repo/summary
 ---
