@@ -6,11 +6,7 @@
   <main>
     <h1>{{ page.title }}</h1>
     {% comment %} {{ page | debug }} {% endcomment %}
-    {% if page.remote_resource %}
-      {% remote_markdown page.remote_resource %}
-    {% else %}
-      {{ content }}
-    {% endif %}
+    {{ content }}
   </main>
   {% include footer.liquid %}
 </body>
