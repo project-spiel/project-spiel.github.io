@@ -3,7 +3,7 @@ layout: default
 title: Create A Speech Provider
 ---
 
-Code speaks best, so lets dive right in and create a fully functional speech provider that uses the `espeak-ng` command line progeam you probably already have installed.
+Code speaks best, so lets dive right in and create a fully functional speech provider that uses the `espeak-ng` command line program you probably already have installed.
 
 ```python
 from dasbus.loop import EventLoop
