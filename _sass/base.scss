@@ -129,3 +129,12 @@ nav details.dropdown {
     margin-top: calc(var(--pico-nav-link-spacing-vertical) * -1);
   }
 }
+
+#spiel-installer ~ picture {
+  max-width: 50%;
+  float: right;
+}
+
+#command-line-installation {
+  clear: both;
+}
