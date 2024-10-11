@@ -3,6 +3,8 @@ layout: home
 title: A Speech Framework for the Free Desktop and Beyond
 ---
 
+<section markdown=1>
+
 <article markdown=1>
 
 ## Make Your App Speak
@@ -32,3 +34,7 @@ By using a well-known suffix in the D-Bus service name, the speech provider auto
 Use Flatpak or Snap to give a one-click install for users. The speech provider can be fully contained and hide any complexity from host systems.
 
 </article>
+
+</section>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xseIsaxrlXo?si=QdBWK0Z4E7vRfUTT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="margin: 1em auto; display: block;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
